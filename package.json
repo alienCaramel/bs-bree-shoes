@@ -1,0 +1,27 @@
+{
+  "name": "bs-bree-shoes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alienCaramel/bs-bree-shoes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alienCaramel/bs-bree-shoes/issues"
+  },
+  "homepage": "https://github.com/alienCaramel/bs-bree-shoes#readme",
+  "devDependencies": {
+    "node-sass": "^3.10.0",
+    "nodemon": "^1.10.2"
+  },
+  "dependencies": {
+    "css-vendor-prefix": "^1.0.1"
+  }
+}

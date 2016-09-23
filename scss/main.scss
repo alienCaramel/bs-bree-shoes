@@ -1,0 +1,19 @@
+/* ==========================================================================
+   MAIN SASS
+   ========================================================================== */
+
+
+/*SETTINGS*/
+@import "settings/breakpoints";
+@import "settings/customVariables";
+@import "settings/utils";
+
+/*GENERIC*/
+@import "generic/colors";
+@import "generic/fonts";
+@import "generic/base";
+@import "generic/breakpoints";
+
+/*CUSTOM COMPONENTES*/
+
+/*FORM COMPONENTES*/
