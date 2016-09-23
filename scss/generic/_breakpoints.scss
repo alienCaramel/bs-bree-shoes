@@ -1,0 +1,33 @@
+/* ==========================================================================
+   BREAKPOINTS
+   ========================================================================== */
+
+@mixin bp-extra-large {
+    @media only screen and (min-width: $min-width-extra-large) {
+        @content;
+    }
+}
+
+@mixin bp-large {
+    @media only screen and (min-width: $min-width-large) {
+        @content;
+    }
+}
+
+@mixin bp-medium {
+    @media only screen and (min-width: $min-width-medium) {
+        @content;
+    }
+}
+
+@mixin bp-small {
+    @media only screen and (max-width: $max-width-small) {
+        @content;
+    }
+}
+
+@mixin bp-smaller {
+    @media only screen and (max-width: $max-width-smaller) {
+        @content;
+    }
+}
