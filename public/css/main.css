@@ -10,6 +10,8 @@
    FONTS
    ========================================================================== */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,600i,700,700i,800,800i';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400';
+@import 'https://fonts.googleapis.com/css?family=Oswald:400,700';
 /* ==========================================================================
    DEFAULT STYLING FOR ELEMENTS
    ========================================================================== */
@@ -21,7 +23,7 @@ body,
 html {
   background-color: #fff;
   height: 100%;
-  font-size: 10px; }
+  font-size: 16px; }
 
 h1,
 h2,
@@ -61,7 +63,12 @@ select {
    ========================================================================== */
 /*CUSTOM COMPONENTES*/
 .card {
-  height: 610px;
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 430px; }
+  .card p {
+    font: 0.8125rem "Roboto", sans-serif;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 28px; }
 
 /*FORM COMPONENTES*/
