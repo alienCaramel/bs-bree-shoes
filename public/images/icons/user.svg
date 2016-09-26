@@ -1,0 +1,11 @@
+<svg id="Item_5" data-name="Item 5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon" class="cls-1" d="M1248,97c-2.67,0-8,1.335-8,4v2h16v-2c0-2.666-5.33-4-8-4m0-10a4,4,0,1,0,4,4,4,4,0,0,0-4-4" transform="translate(-1240 -87)"/>
+</svg>

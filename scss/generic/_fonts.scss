@@ -4,19 +4,21 @@
 
 // PATHS
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,600i,700,700i,800,800i';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400';
+@import 'https://fonts.googleapis.com/css?family=Oswald:400,700';
 
 // FONTS
 // ============== FONT VARIABLES =================
 
-$default-font-size: 10;
+$default-font-size: 16;
 
-// Open Sans
-$open-sans: 'Open Sans';
+$roboto-font-family: 'Roboto', sans-serif;
+$roboto-light: 300;
+$roboto-regular: 400;
 
-$open-sans-family: $open-sans, sans-serif;
 
-$open-sans-light: 300;
-$open-sans-regular: 400;
-$open-sans-semi-bold: 600;
-$open-sans-bold: 700;
-$open-sans-extra-bold: 800;
+//OSWALD
+
+$oswald-family: 'Oswald', sans-serif;
+$oswald-regular: 400;
+$oswald-bold: 700;

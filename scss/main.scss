@@ -7,6 +7,7 @@
 @import "settings/breakpoints";
 @import "settings/customVariables";
 @import "settings/utils";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /*GENERIC*/
 @import "generic/colors";
@@ -15,5 +16,7 @@
 @import "generic/breakpoints";
 
 /*CUSTOM COMPONENTES*/
+@import "components/container-wrap";
+@import "components/card";
 
 /*FORM COMPONENTES*/
