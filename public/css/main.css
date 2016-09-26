@@ -64,11 +64,28 @@ select {
 /*CUSTOM COMPONENTES*/
 .card {
   background-color: #fff;
-  min-height: 430px; }
+  min-height: 430px;
+  text-align: center; }
   .card p {
-    font: 0.8125rem "Roboto", sans-serif;
+    font: 0.875rem "Roboto", sans-serif;
     font-weight: 300;
     color: #666666;
     margin-bottom: 28px; }
+  .card__actions {
+    border: 1px solid red; }
+  .card__title {
+    font: 0.875rem "Roboto", sans-serif;
+    font-weight: 300;
+    margin-bottom: 15px; }
+  .card__description {
+    font: 0.875rem "Roboto", sans-serif;
+    font-weight: 300; }
+  .card__price {
+    font: 0.875rem "Roboto", sans-serif;
+    font-weight: 300; }
+    .card__price--disscount {
+      color: #fc7070;
+      text-decoration: line-through;
+      margin-left: 5px; }
 
 /*FORM COMPONENTES*/
