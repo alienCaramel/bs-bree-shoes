@@ -1,0 +1,119 @@
+.header{
+  &__menu{
+    display: inline-block;
+
+    &-item {
+      display: inline-block;
+
+    }
+
+   &-anchor {
+     text-decoration: none;
+     text-transform: uppercase;
+     color:$doveGray;
+
+   }
+  }
+
+  &__actions {
+    &-anchor {
+      font-family:$oswald-font-family;
+      color:$doveGray;
+
+    }
+
+    &-anchor--search {
+      &-icon {
+        margin-right: 5px;
+        display: inline-block;
+
+      }
+
+      //&-icon:before {
+      //  background-image:url("/images/icons/glass.svg"); ;
+      //}
+
+    }
+
+    &-anchor--cart {
+
+    }
+
+    &-anchor--sign-in {
+
+    }
+  }
+}
+
+
+
+.header-search{
+  float: left;
+  width: 360px;
+  margin-right: 10px;
+
+  a {
+    text-transform: uppercase;
+    color:$doveGray;
+    text-decoration: none;
+  }
+
+
+}
+//SVG
+
+
+//BOOSTRAP OVERWRITTE
+
+
+.navbar-brand {
+  float: left;
+  line-height: 20px;
+  display: block;
+
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 280px;
+  line-height: 1.42857;
+  color: #555555;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 280px;
+  line-height: 1.42857;
+  color: #555555;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+body {
+  font-family:$oswald-font-family;
+  font-size: 11px;
+  line-height: 1.42857;
+  color:$doveGray;
+  background-color: $white;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand {
+  color: $white;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: $white;
+}
+
+.navbar-default {
+  background-color:$white;
+  border-color: $white;
+}

@@ -1,8 +1,8 @@
 /* ==========================================================================
    MAIN SASS
    ========================================================================== */
-
-
+//BOOTSTRAP
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 /*SETTINGS*/
 @import "settings/breakpoints";
 @import "settings/customVariables";
@@ -16,5 +16,6 @@
 
 /*CUSTOM COMPONENTES*/
 @import "components/card";
+@import "components/header";
 
 /*FORM COMPONENTES*/
