@@ -21,7 +21,7 @@
 
 body,
 html {
-  background-color: #fff;
+  background-color: #f2f9fd;
   height: 100%;
   font-size: 16px; }
 
@@ -64,25 +64,26 @@ select {
 /*CUSTOM COMPONENTES*/
 .card {
   background-color: #fff;
-  min-height: 430px;
-  text-align: center; }
-  .card p {
+  min-height: 200px;
+  text-align: center;
+  border: 1px solid red; }
+  .card__actions {
+    border: 1px solid red; }
+  .card__title {
+    font: 1.125rem "Oswald", sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #333333; }
+  .card__description {
     font: 0.875rem "Roboto", sans-serif;
     font-weight: 300;
     color: #666666;
     margin-bottom: 28px; }
-  .card__actions {
-    border: 1px solid red; }
-  .card__title {
-    font: 0.875rem "Roboto", sans-serif;
-    font-weight: 300;
-    margin-bottom: 15px; }
-  .card__description {
-    font: 0.875rem "Roboto", sans-serif;
-    font-weight: 300; }
   .card__price {
-    font: 0.875rem "Roboto", sans-serif;
-    font-weight: 300; }
+    font: 1.125rem "Oswald", sans-serif;
+    font-weight: 400;
+    color: #333333; }
     .card__price--disscount {
       color: #fc7070;
       text-decoration: line-through;

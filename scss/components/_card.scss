@@ -1,33 +1,32 @@
 .card {
     background-color: $white;
-    min-height: 430px;
+    min-height: 200px;
     text-align: center;
-
-    p {
-        font: calculate-rem(14) $roboto-font-family;
-        font-weight: $roboto-light;
-    	color: $doveGray;
-        margin-bottom: 28px;
-    }
+    border: 1px solid red;
 
     &__actions {
         border: 1px solid red;
     }
 
     &__title {
-        font: calculate-rem(14) $roboto-font-family;
-        font-weight: $roboto-light;
+        font: calculate-rem(18) $oswald-family;
+        font-weight: $oswald-regular;
         margin-bottom: 15px;
+        text-transform: uppercase;
+        color : $mineShaft;
     }
 
     &__description {
         font: calculate-rem(14) $roboto-font-family;
         font-weight: $roboto-light;
+    	color: $doveGray;
+        margin-bottom: 28px;
     }
 
     &__price {
-        font: calculate-rem(14) $roboto-font-family;
-        font-weight: $roboto-light;
+        font: calculate-rem(18) $oswald-family;
+        font-weight: $oswald-regular;
+        color : $mineShaft;
 
         &--disscount {
             color: $bittersweet;
