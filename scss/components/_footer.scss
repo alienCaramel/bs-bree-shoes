@@ -5,18 +5,49 @@
     color: $doveGray;   
 }
 
+.footer__brand-logo, .footer__list, .footer__icon-wrapper {
+    display: inline-block;
+}
+
 .footer__brand-logo {
-    background-image: url("..\..\public\images\brand-logo.png");
+    background-image: url("../images/brand-logo.png");
+    background-position: 0,0;
     width: 50px;
     height: 50px;
 }
 
+.footer__list {
+    text-transform: uppercase;
+}
+
 .footer__icon-wrapper {
     border: 1px solid $doveGray;
-    width: 49px;
-    height: 49px;
+    width: 48px;
+    height: 48px;
 }
 
 .footer__icon {
-    background-image: url("..\..\public\images\sprite.png");
+    background-image: url("../images/icons/footer-icons-sprite.png");
+    width: 30px;
+    height: 31px;
+}
+
+.footer__icon-youtube {
+    background-position: -8px, -2px;
+}
+
+.footer__icon-instagram {
+    background-position: -53px, -2px;
+}
+
+.footer__icon-twitter {
+    background-position: -45px, -2px;
+}
+
+.footer__icon-facebook {
+    background-position: -138px, -2px;
+}
+
+.footer__icon-pinterest {
+    background-position: -180px, -2px;
 }
