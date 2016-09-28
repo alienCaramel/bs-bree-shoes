@@ -11,8 +11,19 @@
             display: inline-block;
         }
 
+        &-item:first-child {
+            float:  left;
+        }
+
+        &-item:last-child {
+            float:  right;
+        }
+
+        &-item:only-child {
+           float: none;
+        }
+
         &-item--like {
-            border: 1px solid red;
             text-align: left;
             
             a {
@@ -39,6 +50,16 @@
            padding: 5px 15px;
         }
 
+        &-item--new {
+           @include border-radius(30px);
+           font: calculate-rem(14) $oswald-family;
+           font-weight: $oswald-regular;
+           text-transform: uppercase;
+           color: $white;
+           background-color: $feijoa;
+           padding: 5px 15px;
+        }
+
         &-item--buy {
            background-image: url("../images/icons/basket.svg");
            height: 14px;
@@ -52,6 +73,10 @@
         &-item--buy:hover {
            opacity: 0.5;
         }
+    }
+
+    &__doble {
+        border: 1px solid red;
     }
 
     &__title {
@@ -80,4 +105,5 @@
             margin-left: 5px;
         }
     }
+    
 }
