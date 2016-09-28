@@ -5853,6 +5853,9 @@ li {
 a {
   text-decoration: none; }
 
+a:hover {
+  text-decoration: none; }
+
 picture {
   font-size: 0; }
 
@@ -5885,9 +5888,44 @@ select {
   background-color: #fff;
   min-height: 200px;
   text-align: center;
-  padding: 33px 0 40px 0; }
+  padding: 33px 20px 40px 20px; }
   .card__actions {
-    border: 1px solid red; }
+    display: block; }
+    .card__actions-item {
+      display: inline-block; }
+    .card__actions-item--like {
+      border: 1px solid red;
+      text-align: left; }
+      .card__actions-item--like a {
+        background-image: url("../images/icons/heart.svg");
+        height: 14px;
+        width: 16px;
+        display: inline-block;
+        cursor: hand;
+        margin-right: 0; }
+    .card__actions-item--like:hover {
+      opacity: 0.5; }
+    .card__actions-item--exclusive {
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      font: 0.875rem "Oswald", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #0089cf;
+      padding: 5px 15px; }
+    .card__actions-item--buy {
+      background-image: url("../images/icons/basket.svg");
+      height: 14px;
+      width: 16px;
+      display: inline-block;
+      cursor: hand;
+      text-align: right;
+      margin: 0 auto; }
+    .card__actions-item--buy:hover {
+      opacity: 0.5; }
   .card__title {
     font: 1.125rem "Oswald", sans-serif;
     font-weight: 400;
@@ -5907,5 +5945,55 @@ select {
       color: #fc7070;
       text-decoration: line-through;
       margin-left: 5px; }
+
+.navbar-brand {
+  float: left;
+  line-height: 0px;
+  display: block;
+  padding: 0px 0px;
+  line-height: 0px;
+  margin-top: 14px; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 211px;
+  color: #00b3ee;
+  border: none;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  -webkit-transition: none; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 211px;
+  line-height: 1.42857;
+  color: #00b3ee;
+  border: none;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transition: none; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 11px;
+  line-height: 1.42857;
+  color: #666666;
+  background-color: transparent;
+  text-transform: uppercase; }
+
+.navbar-default .navbar-brand {
+  background-color: #fff; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #fff; }
+
+.navbar-default {
+  background-color: #f2f9fd;
+  background-color: #f2f9fd;
+  border-color: #f2f9fd; }
 
 /*FORM COMPONENTES*/

@@ -12,14 +12,39 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-
         <div class="container-fluid">
-            
-            <header class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <nav></nav>
-                </div>
-            </header>
+            <nav class="navbar navbar-default"> <!-- Brand and toggle get grouped for better mobile display --> 
+                <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+                    <a href="#" src="images/brand-logo.png"> 
+                        <img class="navbar-brand" src="images/brand-logo.png" alt=""> 
+                    </a> 
+                </div> <!-- Collect the nav links, forms, and other content for toggling --> 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+                    <ul class="nav navbar-nav"> 
+                        <li class="active"><a href="#">Footwear <span class="sr-only">(current)</span></a></li> 
+                        <li><a href="#">Clothing</a></li> 
+                        <li><a href="#">Accessories</a></li> 
+                        <li><a href="#">Brands</a></li> 
+                        <li><a href="#">Clearance</a></li> 
+                    </ul> 
+                    <form class="navbar-form navbar-left"> 
+                        <div class="form-group"> 
+                            <input type="text" class="form-control" placeholder=""> 
+                        </div> 
+                    </form> 
+                    <ul class="nav navbar-nav navbar-right"> 
+                        <li> <a href="#" class="actions__anchor-search-icon"> <span class="actions__item-search-icon"></span> Search </a></li> 
+                        <li><a href="#">Cart (2)</a></li> 
+                        <li><a href="#">Sign in</a></li> 
+                    </ul> 
+                </div><!-- /.navbar-collapse --> 
+            </nav>
 
             <main class="container-wrap">
                 <div class="row container-wrap__item">
@@ -47,11 +72,27 @@
                         <p class="card__price">$120.00<span class="card__price--disscount">$160.00</span></p>
                     </div>
                     <div class="card col-sm-12 col-md-3 col-lg-3">
+                        <ul class="card__actions">
+                             <li class="card__actions-item card__actions-item--like">
+                                 <a href="#"></a>
+                             </li>
+                             <li class="card__actions-item">
+                                 <a class="card__actions-item--exclusive" href="#">Exclusive</a>
+                             </li>
+                              <li class="card__actions-item">
+                                  <a class="card__actions-item--buy" href="#"></a>
+                             </li>
+                        </ul>
                         <h3 class="card__title">Converse x Comme des Garçons</h3>
                         <p class="card__description">Black Heart Logo</p>
                         <p class="card__price">$160.00<span class="card__price--disscount">$200.00</span></p>
                     </div>
                     <div class="card col-sm-12 col-md-3 col-lg-3">
+                        <ul class="card__actions">
+                             <li class="card__actions-item">
+                                 <a class="card__actions-item--exclusive" href="#">Exclusive</a>
+                             </li>
+                        </ul>
                         <h3 class="card__title">Supreme x Nike SB</h3>
                         <p class="card__description">Tennis Classic</p>
                         <p class="card__price">$105.00</p>
