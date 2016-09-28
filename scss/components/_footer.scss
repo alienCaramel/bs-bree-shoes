@@ -1,7 +1,7 @@
 
 // FOOTER //
 
-.footer-main {
+.footer{
     background-color: $woodsmoke;
     font: calculate-rem(14) $oswald-family;
     font-weight: $oswald-bold;
@@ -10,105 +10,113 @@
     padding-left: calculate-rem(61);
     padding-top: calculate-rem(41);
     padding-right: calculate-rem(61);
-    padding-bottom: calculate-rem(33);   
-}
+    padding-bottom: calculate-rem(33);
 
-.footer__brand-logo, .footer__list, .footer__icon-wrapper, .footer__icon{
-    display: inline-block;
-}
+    &__brand-logo,
+    &__list, 
+    &__icon-wrapper, 
+    &__icon {
+         display: inline-block;
+    }
 
-.footer__brand-logo, .footer__list{
-    vertical-align: top;
-}
+    &__brand-logo, 
+    &__list {
+        vertical-align: top;
+    }
 
-.footer__brand-logo {
-    background-image: url("../images/brand-logo.png");
-    background-position: 0,0;
-    width: 50px;
-    height: 50px;
-    margin-right: calculate-rem(40);
-}
+    &__brand-logo {
+        background-image: url("../images/brand-logo.png");
+        background-position: 0,0;
+        width: 50px;
+        height: 50px;
+        margin-right: calculate-rem(40);
+    }
 
-.footer__list {
-    text-transform: uppercase;
-    font-size: calculate-rem(12);
-    padding-right: calculate-rem(120);
-}
+    &__list {
+        text-transform: uppercase;
+        font-size: calculate-rem(12);
+        padding-right: calculate-rem(120);
+    }
 
-.footer__list li{
-    padding-bottom: calculate-rem(14);
-}
+    &__list li{
+        padding-bottom: calculate-rem(14);
+    }
 
-.footer__list a{
-    color: $doveGray;  
-}
+    &__list a{
+        color: $doveGray;  
+    }
 
-.footer__icon-wrapper {
-    border: 1px solid $doveGray;
-    width: 48px;
-    height: 48px;
-    padding-left: calculate-rem(8);
-    padding-top: calculate-rem(10);
-    margin-right: calculate-rem(10);
-}
+    &__icon-wrapper {
+        border: 1px solid $doveGray;
+        width: 48px;
+        height: 48px;
+        padding-left: calculate-rem(8);
+        padding-top: calculate-rem(10);
+        margin-right: calculate-rem(10);
+    }
 
-.footer__icon-wrapper:last-child {
-    margin: 0;
-}
 
-.footer__icon {
-    background-image: url("../images/icons/footer-icons-sprite.png");
-    width: 30px;
-    height: 31px;
-}
+    &__icon-wrapper:nth-last-child(2) {
+        margin-right: 0px;
+    }
 
-.footer__icon-youtube {
-    background-position: -8px, -2px;
-}
+    &__icon {
+        background-image: url("../images/icons/footer-icons-sprite.png");
+        width: 30px;
+        height: 31px;
+    
+        &--youtube {
+        background-position: -8px, -2px;
+        }
 
-.footer__icon-instagram {
-    background-position: -53px, -2px;
-}
+        &--instagram {
+            background-position: -53px, -2px;
+        }
 
-.footer__icon-twitter {
-    background-position: -95px, -2px;
-}
+        &--twitter {
+            background-position: -95px, -2px;
+        }
 
-.footer__icon-facebook {
-    background-position: -138px, -2px;
-}
+        &--facebook {
+            background-position: -138px, -2px;
+        }
 
-.footer__icon-pinterest {
-    background-position: -180px, -2px;
-}
+        &--pinterest {
+            background-position: -180px, -2px;
+        }
 
-.footer__mail, .footer__copyright { 
-    font-family: $roboto-font-family;
-    font-weight: $roboto-light;
-}
+        &--mail {
+            background-position: -228px, -11px;
+            width: 18px;
+            height: 13px;   
+        }
+    }
 
-.footer__mail {
-    font-size: calculate-rem(14);
-}
+    &__mail, 
+    &__copyright { 
+        font-family: $roboto-font-family;
+        font-weight: $roboto-light;
+    }
 
-.footer__mail-text {
-    padding-top: calculate-rem(31);
-}
+    &__mail {
+        font-size: calculate-rem(14);
+    }
 
-.footer__icon-mail {
-    background-position: -228px, -11px;
-    width: 18px;
-    height: 13px;   
-}
+    &__mail-text {
+        padding-top: calculate-rem(31);
+    }
 
-.footer__copyright {
-    font-size: calculate-rem(12);
-    text-align: center;
-    padding-top: calculate-rem(62);
-}
+    &__copyright {
+        font-size: calculate-rem(12);
+        text-align: center;
+        padding-top: calculate-rem(62);
+    }
 
-.footer__column-social {
-    border-bottom: 2px solid $doveGray;
-    padding-left: 0;
-    padding-right: 0;
+    &__column-social {
+        border-bottom: 2px solid $doveGray;
+        padding-left: 0;
+        padding-right: 0;
+        width: calculate-rem(292);
+    }
+
 }
