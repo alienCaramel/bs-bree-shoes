@@ -1,22 +1,122 @@
-.footer-main {
+
+// FOOTER //
+
+.footer{
     background-color: $woodsmoke;
     font: calculate-rem(14) $oswald-family;
     font-weight: $oswald-bold;
-    color: $doveGray;   
-}
+    color: $doveGray;
 
-.footer__brand-logo {
-    background-image: url("..\..\public\images\brand-logo.png");
-    width: 50px;
-    height: 50px;
-}
+    padding-left: calculate-rem(61);
+    padding-top: calculate-rem(41);
+    padding-right: calculate-rem(61);
+    padding-bottom: calculate-rem(33);
 
-.footer__icon-wrapper {
-    border: 1px solid $doveGray;
-    width: 49px;
-    height: 49px;
-}
+    &__brand-logo,
+    &__list, 
+    &__icon-wrapper, 
+    &__icon {
+         display: inline-block;
+    }
 
-.footer__icon {
-    background-image: url("..\..\public\images\sprite.png");
+    &__brand-logo, 
+    &__list {
+        vertical-align: top;
+    }
+
+    &__brand-logo {
+        background-image: url("../images/brand-logo.png");
+        background-position: 0,0;
+        width: 50px;
+        height: 50px;
+        margin-right: calculate-rem(40);
+    }
+
+    &__list {
+        text-transform: uppercase;
+        font-size: calculate-rem(12);
+        padding-right: calculate-rem(120);
+    }
+
+    &__list li{
+        padding-bottom: calculate-rem(14);
+    }
+
+    &__list a{
+        color: $doveGray;  
+    }
+
+    &__icon-wrapper {
+        border: 1px solid $doveGray;
+        width: 48px;
+        height: 48px;
+        padding-left: calculate-rem(8);
+        padding-top: calculate-rem(10);
+        margin-right: calculate-rem(10);
+    }
+
+
+    &__icon-wrapper:nth-last-child(2) {
+        margin-right: 0px;
+    }
+
+    &__icon {
+        background-image: url("../images/icons/footer-icons-sprite.png");
+        width: 30px;
+        height: 31px;
+    
+        &--youtube {
+        background-position: -8px, -2px;
+        }
+
+        &--instagram {
+            background-position: -53px, -2px;
+        }
+
+        &--twitter {
+            background-position: -95px, -2px;
+        }
+
+        &--facebook {
+            background-position: -138px, -2px;
+        }
+
+        &--pinterest {
+            background-position: -180px, -2px;
+        }
+
+        &--mail {
+            background-position: -228px, -11px;
+            width: 18px;
+            height: 13px;   
+        }
+    }
+
+    &__mail, 
+    &__copyright { 
+        font-family: $roboto-font-family;
+        font-weight: $roboto-light;
+    }
+
+    &__mail {
+        font-size: calculate-rem(14);
+    }
+
+    &__mail-text {
+        padding-top: calculate-rem(31);
+    }
+
+    &__copyright {
+        font-size: calculate-rem(12);
+        text-align: center;
+        padding-top: calculate-rem(62);
+    }
+
+    &__column-social {
+        border-bottom: 2px solid $doveGray;
+        padding-left: 0;
+        padding-right: 0;
+        width: calculate-rem(292);
+    }
+
 }
