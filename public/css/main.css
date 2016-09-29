@@ -5881,18 +5881,29 @@ select {
    BREAKPOINTS
    ========================================================================== */
 /*CUSTOM COMPONENTES*/
-.container-wrap__item {
-  margin-bottom: 20px; }
-
 .card {
-  background-color: #fff;
-  min-height: 200px;
-  text-align: center;
-  padding: 33px 20px 40px 20px; }
+  padding: 0 10px;
+  margin-bottom: 20px; }
+  .card__content {
+    background-color: #fff;
+    min-height: 430px;
+    padding: 33px 10px 0 10px;
+    box-sizing: border-box;
+    position: relative; }
+  .card img {
+    margin-bottom: 25px; }
+  .card__info {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 40px; }
   .card__actions {
-    display: block; }
+    display: block;
+    padding: 0 30px;
+    text-align: center; }
     .card__actions-item {
-      display: inline-block; }
+      display: inline-block;
+      box-sizing: border-box; }
     .card__actions-item:first-child {
       float: left; }
     .card__actions-item:last-child {
@@ -5942,8 +5953,12 @@ select {
       margin: 0 auto; }
     .card__actions-item--buy:hover {
       opacity: 0.5; }
-  .card__doble {
-    border: 1px solid red; }
+  .card__bg {
+    color: #fff;
+    background-image: url("../images/footwear.jpg");
+    background-repeat: no-repeat;
+    height: 430px;
+    box-sizing: border-box; }
   .card__title {
     font: 1.125rem "Oswald", sans-serif;
     font-weight: 400;
@@ -5960,6 +5975,136 @@ select {
     font-weight: 400;
     color: #333333; }
     .card__price--disscount {
+      color: #fc7070;
+      text-decoration: line-through;
+      margin-left: 5px; }
+
+.card-doble {
+  padding: 0 10px; }
+  .card-doble__content {
+    background-color: #fff;
+    min-height: 430px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box; }
+  .card-doble__wrapper {
+    box-sizing: border-box;
+    min-height: 430px;
+    position: relative; }
+  .card-doble__image, .card-doble__info {
+    height: 50%;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  .card-doble__actions {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    text-transform: none;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .card-doble__actions {
+        width: auto; } }
+    .card-doble__actions-item {
+      display: inline-block;
+      box-sizing: border-box; }
+    .card-doble__actions-item:first-child {
+      float: left; }
+    .card-doble__actions-item:last-child {
+      float: right; }
+    .card-doble__actions-item:only-child {
+      float: none; }
+    .card-doble__actions-item--like {
+      text-align: left; }
+      .card-doble__actions-item--like a {
+        background-image: url("../images/icons/heart.svg");
+        height: 14px;
+        width: 16px;
+        display: inline-block;
+        cursor: hand;
+        margin-right: 0; }
+    .card-doble__actions-item--like:hover {
+      opacity: 0.5; }
+    .card-doble__actions-item--exclusive {
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      font: 0.875rem "Oswald", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #0089cf;
+      padding: 5px 15px; }
+    .card-doble__actions-item--new {
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      font: 0.875rem "Oswald", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #83d78c;
+      padding: 5px 15px; }
+    .card-doble__actions-item--buy {
+      background-image: url("../images/icons/basket.svg");
+      height: 14px;
+      width: 16px;
+      display: inline-block;
+      cursor: hand;
+      text-align: right;
+      margin: 0 auto; }
+    .card-doble__actions-item--buy:hover {
+      opacity: 0.5; }
+  .card-doble__bg {
+    color: #fff;
+    background-image: url("../images/footwear.jpg");
+    background-repeat: no-repeat;
+    height: 430px;
+    box-sizing: border-box; }
+  .card-doble__title {
+    font: 1.125rem "Oswald", sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .card-doble__title {
+        text-align: left; } }
+  .card-doble__description {
+    font: 0.75rem/1.25rem "Roboto", sans-serif;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 28px;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .card-doble__description {
+        text-align: left; } }
+  .card-doble__subtitle {
+    font: 0.875rem/1.5625rem "Roboto", sans-serif;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 28px;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .card-doble__subtitle {
+        text-align: left; } }
+  .card-doble__price {
+    font: 1.125rem "Oswald", sans-serif;
+    font-weight: 400;
+    color: #333333;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .card-doble__price {
+        text-align: left; } }
+    .card-doble__price--disscount {
       color: #fc7070;
       text-decoration: line-through;
       margin-left: 5px; }
@@ -5995,14 +6140,6 @@ select {
   box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.75);
   -webkit-transition: none; }
 
-body {
-  font-family: "Oswald", sans-serif;
-  font-size: 11px;
-  line-height: 1.42857;
-  color: #666666;
-  background-color: transparent;
-  text-transform: uppercase; }
-
 .navbar-default .navbar-brand {
   background-color: #fff; }
 
@@ -6013,5 +6150,76 @@ body {
   background-color: #f2f9fd;
   background-color: #f2f9fd;
   border-color: #f2f9fd; }
+
+.footer {
+  background-color: #0c0d0d;
+  font: 0.875rem "Oswald", sans-serif;
+  font-weight: 700;
+  color: #666666;
+  padding-left: 3.8125rem;
+  padding-top: 2.5625rem;
+  padding-right: 3.8125rem;
+  padding-bottom: 2.0625rem; }
+  .footer__brand-logo, .footer__list, .footer__icon-wrapper, .footer__icon {
+    display: inline-block; }
+  .footer__brand-logo, .footer__list {
+    vertical-align: top; }
+  .footer__brand-logo {
+    background-image: url("../images/brand-logo.png");
+    background-position: 0,0;
+    width: 50px;
+    height: 50px;
+    margin-right: 2.5rem; }
+  .footer__list {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding-right: 7.5rem; }
+  .footer__list li {
+    padding-bottom: 0.875rem; }
+  .footer__list a {
+    color: #666666; }
+  .footer__icon-wrapper {
+    border: 1px solid #666666;
+    width: 48px;
+    height: 48px;
+    padding-left: 0.5rem;
+    padding-top: 0.625rem;
+    margin-right: 0.625rem; }
+  .footer__icon-wrapper:nth-last-child(2) {
+    margin-right: 0px; }
+  .footer__icon {
+    background-image: url("../images/icons/footer-icons-sprite.png");
+    width: 30px;
+    height: 31px; }
+    .footer__icon--youtube {
+      background-position: -8px, -2px; }
+    .footer__icon--instagram {
+      background-position: -53px, -2px; }
+    .footer__icon--twitter {
+      background-position: -95px, -2px; }
+    .footer__icon--facebook {
+      background-position: -138px, -2px; }
+    .footer__icon--pinterest {
+      background-position: -180px, -2px; }
+    .footer__icon--mail {
+      background-position: -228px, -11px;
+      width: 18px;
+      height: 13px; }
+  .footer__mail, .footer__copyright {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+  .footer__mail {
+    font-size: 0.875rem; }
+  .footer__mail-text {
+    padding-top: 1.9375rem; }
+  .footer__copyright {
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 3.875rem; }
+  .footer__column-social {
+    border-bottom: 2px solid #666666;
+    padding-left: 0;
+    padding-right: 0;
+    width: 18.25rem; }
 
 /*FORM COMPONENTES*/
