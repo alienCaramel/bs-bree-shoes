@@ -2,11 +2,16 @@
     padding: 0 10px;
 
     &__content {
-        background-image: url("../images/footwear.jpg");
+        background-image: url("../images/footerwear-desktop.jpg");
         background-repeat: no-repeat;
         height: 430px;
         box-sizing: border-box;
         padding-top: 38px;
+
+        @include bp-medium {
+            background-image: url("../images/footwear.jpg");
+            background-repeat: no-repeat;
+        }
     }
 
     &__title {
