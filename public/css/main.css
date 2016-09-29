@@ -5853,6 +5853,9 @@ li {
 a {
   text-decoration: none; }
 
+a:hover {
+  text-decoration: none; }
+
 picture {
   font-size: 0; }
 
@@ -5885,8 +5888,61 @@ select {
   background-color: #fff;
   min-height: 200px;
   text-align: center;
-  padding: 33px 0 40px 0; }
+  padding: 33px 20px 40px 20px; }
   .card__actions {
+    display: block; }
+    .card__actions-item {
+      display: inline-block; }
+    .card__actions-item:first-child {
+      float: left; }
+    .card__actions-item:last-child {
+      float: right; }
+    .card__actions-item:only-child {
+      float: none; }
+    .card__actions-item--like {
+      text-align: left; }
+      .card__actions-item--like a {
+        background-image: url("../images/icons/heart.svg");
+        height: 14px;
+        width: 16px;
+        display: inline-block;
+        cursor: hand;
+        margin-right: 0; }
+    .card__actions-item--like:hover {
+      opacity: 0.5; }
+    .card__actions-item--exclusive {
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      font: 0.875rem "Oswald", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #0089cf;
+      padding: 5px 15px; }
+    .card__actions-item--new {
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      font: 0.875rem "Oswald", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #83d78c;
+      padding: 5px 15px; }
+    .card__actions-item--buy {
+      background-image: url("../images/icons/basket.svg");
+      height: 14px;
+      width: 16px;
+      display: inline-block;
+      cursor: hand;
+      text-align: right;
+      margin: 0 auto; }
+    .card__actions-item--buy:hover {
+      opacity: 0.5; }
+  .card__doble {
     border: 1px solid red; }
   .card__title {
     font: 1.125rem "Oswald", sans-serif;

@@ -2,9 +2,80 @@
     background-color: $white;
     min-height: 200px;
     text-align: center;
-    padding: 33px 0 40px 0;
+    padding: 33px 20px 40px 20px;
 
     &__actions {
+        display: block;
+
+        &-item {
+            display: inline-block;
+        }
+
+        &-item:first-child {
+            float:  left;
+        }
+
+        &-item:last-child {
+            float:  right;
+        }
+
+        &-item:only-child {
+           float: none;
+        }
+
+        &-item--like {
+            text-align: left;
+            
+            a {
+                background-image: url("../images/icons/heart.svg");
+                height: 14px;
+                width: 16px;
+                display: inline-block;
+                cursor: hand;
+                margin-right: 0;
+            }
+        }
+
+        &-item--like:hover {
+           opacity: 0.5;
+        }
+
+        &-item--exclusive {
+           @include border-radius(30px);
+           font: calculate-rem(14) $oswald-family;
+           font-weight: $oswald-regular;
+           text-transform: uppercase;
+           color: $white;
+           background-color: $lochmara;
+           padding: 5px 15px;
+        }
+
+        &-item--new {
+           @include border-radius(30px);
+           font: calculate-rem(14) $oswald-family;
+           font-weight: $oswald-regular;
+           text-transform: uppercase;
+           color: $white;
+           background-color: $feijoa;
+           padding: 5px 15px;
+        }
+
+        &-item--buy {
+           background-image: url("../images/icons/basket.svg");
+           height: 14px;
+           width: 16px;
+           display: inline-block;
+           cursor: hand;
+           text-align: right;
+           margin:0 auto;
+        }
+
+        &-item--buy:hover {
+           opacity: 0.5;
+        }
+    }
+
+    &__doble {
         border: 1px solid red;
     }
 
@@ -34,4 +105,5 @@
             margin-left: 5px;
         }
     }
+    
 }
