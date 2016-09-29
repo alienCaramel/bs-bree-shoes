@@ -5979,6 +5979,28 @@ select {
       text-decoration: line-through;
       margin-left: 5px; }
 
+.card-bg {
+  padding: 0 10px; }
+  .card-bg__content {
+    background-image: url("../images/footwear.jpg");
+    background-repeat: no-repeat;
+    height: 430px;
+    box-sizing: border-box;
+    padding-top: 38px; }
+  .card-bg__title {
+    font: 0.875rem/2.8125rem "Oswald", sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center; }
+  .card-bg__description {
+    font: 3.4375rem/3.75rem "Oswald", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 28px;
+    text-align: center; }
+
 .card-doble {
   padding: 0 10px; }
   .card-doble__content {
