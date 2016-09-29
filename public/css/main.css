@@ -5982,11 +5982,15 @@ select {
 .card-bg {
   padding: 0 10px; }
   .card-bg__content {
-    background-image: url("../images/footwear.jpg");
+    background-image: url("../images/footerwear-desktop.jpg");
     background-repeat: no-repeat;
     height: 430px;
     box-sizing: border-box;
     padding-top: 38px; }
+    @media only screen and (min-width: 768px) {
+      .card-bg__content {
+        background-image: url("../images/footwear.jpg");
+        background-repeat: no-repeat; } }
   .card-bg__title {
     font: 0.875rem/2.8125rem "Oswald", sans-serif;
     font-weight: 400;
@@ -6012,7 +6016,7 @@ select {
     box-sizing: border-box;
     min-height: 430px;
     position: relative; }
-  .card-doble__image, .card-doble__info {
+  .card-doble__info {
     height: 50%;
     overflow: hidden;
     margin: auto;
@@ -6021,6 +6025,21 @@ select {
     left: 0;
     bottom: 0;
     right: 0; }
+  .card-doble__image {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%; }
+    @media only screen and (min-width: 768px) {
+      .card-doble__image {
+        height: 50%;
+        overflow: hidden;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; } }
   .card-doble__actions {
     display: block;
     text-align: center;
