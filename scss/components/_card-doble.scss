@@ -14,13 +14,27 @@
         position: relative;
      }
 
-    &__image,
     &__info{
         height: 50%;
         overflow: hidden;
         margin: auto;
         position: absolute;
         top: 0; left: 0; bottom: 0; right: 0;
+    }
+
+    &__image {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+
+        @include bp-medium {
+            height: 50%;
+            overflow: hidden;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+        }
     }
 
     &__actions {
