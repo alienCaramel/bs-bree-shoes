@@ -53,6 +53,7 @@
     &__list {
         @include bp-medium {
             width: 58.66667%;
+            padding-left: 0%;
         }
 
         &-links {
@@ -64,9 +65,20 @@
                 padding-right: 5%;
             }
 
-             @include bp-medium {
-                padding-right: 5%;
-            }           
+            @include bp-medium {
+                padding-right: 0%;
+            }
+
+            @include bp-large {
+               padding-right: 5%;
+            }
+
+            @include bp-extra-large {
+                text-transform: uppercase;
+                font-size: calculate-rem(12);
+                padding-right: calculate-rem(120);
+            }
+            
         }
 
         &-links li{
@@ -155,6 +167,7 @@
         font-size: calculate-rem(12);
         text-align: center;
         padding-top: calculate-rem(62);
+        text-transform: none;
     }
 
     &__column-social {
