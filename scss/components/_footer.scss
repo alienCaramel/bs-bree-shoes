@@ -1,6 +1,10 @@
 
 // FOOTER //
 
+::-webkit-input-placeholder {
+   color: $doveGray;
+}
+
 .footer{
     background-color: $woodsmoke;
     font: calculate-rem(14) $oswald-family;
@@ -13,14 +17,14 @@
     padding-bottom: calculate-rem(33);
 
     &__brand-logo,
-    &__list, 
+    &__list-links, 
     &__icon-wrapper, 
     &__icon {
          display: inline-block;
     }
 
     &__brand-logo, 
-    &__list {
+    &__list-links {
         vertical-align: top;
     }
 
@@ -33,17 +37,20 @@
     }
 
     &__list {
-        text-transform: uppercase;
-        font-size: calculate-rem(12);
-        padding-right: calculate-rem(120);
-    }
 
-    &__list li{
-        padding-bottom: calculate-rem(14);
-    }
+        &-links {
+            text-transform: uppercase;
+            font-size: calculate-rem(12);
+            padding-right: calculate-rem(120);
+        }
 
-    &__list a{
-        color: $doveGray;  
+        &-links li{
+            padding-bottom: calculate-rem(14);
+        }
+
+        &-links a{
+            color: $doveGray;  
+        }
     }
 
     &__icon-wrapper {
@@ -64,6 +71,7 @@
         background-image: url("../images/icons/footer-icons-sprite.png");
         width: 30px;
         height: 31px;
+        background-repeat: no-repeat;
     
         &--youtube {
         background-position: -8px, -2px;
@@ -86,24 +94,36 @@
         }
 
         &--mail {
-            background-position: -228px, -11px;
-            width: 18px;
-            height: 13px;   
+            background-position-x: -227px;
+            background-position-y: -7px;
+            width: 20px;
+            height: 15px;   
         }
     }
 
     &__mail, 
-    &__copyright { 
+    &__copyright,
+    &__mail-input { 
         font-family: $roboto-font-family;
         font-weight: $roboto-light;
     }
 
     &__mail {
         font-size: calculate-rem(14);
-    }
+        vertical-align: middle;
 
-    &__mail-text {
-        padding-top: calculate-rem(31);
+
+        &-text {
+            padding-top: calculate-rem(31);
+        }
+
+        &-input {
+            border: none;
+            background-color: transparent;
+            padding-top: calculate-rem(31);
+            padding-left: calculate-rem(10);
+            padding-bottom: calculate-rem(16);
+        }
     }
 
     &__copyright {
@@ -117,6 +137,7 @@
         padding-left: 0;
         padding-right: 0;
         width: calculate-rem(292);
+        float: right;
     }
 
 }
