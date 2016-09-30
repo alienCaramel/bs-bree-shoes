@@ -46,6 +46,7 @@
             
             a {
                 background-image: url("../images/icons/heart.svg");
+                background-repeat: no-repeat;
                 height: 14px;
                 width: 16px;
                 display: inline-block;
@@ -80,6 +81,7 @@
 
         &-item--buy {
            background-image: url("../images/icons/basket.svg");
+           background-repeat: no-repeat;
            height: 14px;
            width: 16px;
            display: inline-block;
