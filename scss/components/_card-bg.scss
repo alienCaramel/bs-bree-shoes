@@ -1,0 +1,34 @@
+.card-bg {
+    padding: 0 10px;
+
+    &__content {
+        background-image: url("../images/footerwear-desktop.jpg");
+        background-repeat: no-repeat;
+        height: 430px;
+        box-sizing: border-box;
+        padding-top: 38px;
+
+        @include bp-medium {
+            background-image: url("../images/footwear.jpg");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__title {
+        font: calculate-rem(14) / calculate-rem(45) $oswald-family;
+        font-weight: $oswald-regular;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color : $white;
+        text-align: center;
+    }
+
+    &__description {
+        font: calculate-rem(55) / calculate-rem(60) $oswald-family;
+        font-weight: $roboto-light;
+    	color: $white;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    
+}
