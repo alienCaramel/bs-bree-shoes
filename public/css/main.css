@@ -6325,6 +6325,14 @@ a {
   padding-top: 2.5625rem;
   padding-right: 3.8125rem;
   padding-bottom: 2.0625rem; }
+  @media only screen and (max-width: 767px) {
+    .footer {
+      padding-left: 3%;
+      padding-right: 3%; } }
+  @media only screen and (min-width: 768px) {
+    .footer {
+      padding-left: 3%;
+      padding-right: 3%; } }
   .footer__brand-logo, .footer__list-links, .footer__icon-wrapper, .footer__icon {
     display: inline-block; }
   .footer__brand-logo, .footer__list-links {
@@ -6335,10 +6343,31 @@ a {
     width: 50px;
     height: 50px;
     margin-right: 2.5rem; }
+    @media only screen and (max-width: 767px) {
+      .footer__brand-logo {
+        margin-right: 5%; } }
+  @media only screen and (min-width: 768px) {
+    .footer__list {
+      width: 58.66667%;
+      padding-left: 0%; } }
   .footer__list-links {
     text-transform: uppercase;
     font-size: 0.75rem;
     padding-right: 7.5rem; }
+    @media only screen and (max-width: 767px) {
+      .footer__list-links {
+        padding-right: 5%; } }
+    @media only screen and (min-width: 768px) {
+      .footer__list-links {
+        padding-right: 0%; } }
+    @media only screen and (min-width: 960px) {
+      .footer__list-links {
+        padding-right: 5%; } }
+    @media only screen and (min-width: 1409px) {
+      .footer__list-links {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        padding-right: 7.5rem; } }
   .footer__list-links li {
     padding-bottom: 0.875rem; }
   .footer__list-links a {
@@ -6385,25 +6414,23 @@ a {
       background-color: transparent;
       padding-top: 1.9375rem;
       padding-left: 0.625rem;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      width: 92%; }
   .footer__copyright {
     font-size: 0.75rem;
     text-align: center;
-    padding-top: 3.875rem; }
+    padding-top: 3.875rem;
+    text-transform: none; }
   .footer__column-social {
     border-bottom: 2px solid #666666;
     padding-left: 0;
     padding-right: 0;
     width: 18.25rem;
     float: right; }
-
-@media (max-width: 1206px) {
-  .footer__list-links {
-    padding-right: 20px; } }
-
-@media (max-width: 1015px) {
-  .footer__column-social {
-    float: left;
-    padding-top: 100; } }
+    @media only screen and (max-width: 767px) {
+      .footer__column-social {
+        float: none;
+        margin-left: 15%;
+        padding-top: 1.5625rem; } }
 
 /*FORM COMPONENTES*/
