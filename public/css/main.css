@@ -6016,6 +6016,12 @@ select {
 
 .card-doble {
   padding: 0 10px; }
+  @media only screen and (min-width: 768px) {
+    .card-doble img {
+      width: auto; } }
+  @media only screen and (min-width: 960px) {
+    .card-doble img {
+      width: 100%; } }
   .card-doble__content {
     background-color: #fff;
     min-height: 430px;
@@ -6179,6 +6185,14 @@ select {
   box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.75);
   -webkit-transition: none;
   background-color: #f2f9fd; }
+
+.nav {
+  font-family: "Oswald", sans-serif;
+  font-size: 11px;
+  line-height: 1.42857;
+  color: #666666;
+  background-color: transparent;
+  text-transform: uppercase; }
 
 .navbar-default .navbar-brand {
   background-color: #fff; }
