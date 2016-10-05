@@ -1,6 +1,17 @@
 .card-doble {
     padding: 0 10px;
 
+    img {
+        
+        @include bp-medium {
+             width: auto;
+        }
+
+        @include bp-large {
+             width: 100%;
+        }
+    }
+
     &__content {
         background-color: $white;
         min-height: 430px;

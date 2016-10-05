@@ -6016,6 +6016,12 @@ select {
 
 .card-doble {
   padding: 0 10px; }
+  @media only screen and (min-width: 768px) {
+    .card-doble img {
+      width: auto; } }
+  @media only screen and (min-width: 960px) {
+    .card-doble img {
+      width: 100%; } }
   .card-doble__content {
     background-color: #fff;
     min-height: 430px;
