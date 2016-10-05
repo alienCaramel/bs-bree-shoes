@@ -5904,6 +5904,11 @@ select {
     width: 100%;
     bottom: 40px;
     padding: 0 15px; }
+  .card__info--big {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px; }
   .card__actions {
     display: block;
     padding: 0 30px;
@@ -5939,7 +5944,7 @@ select {
       text-transform: uppercase;
       color: #fff;
       background-color: #0089cf;
-      padding: 5px 15px; }
+      padding: 2px 15px; }
     .card__actions-item--new {
       -webkit-border-radius: 30px;
       border-radius: 30px;
@@ -5950,7 +5955,7 @@ select {
       text-transform: uppercase;
       color: #fff;
       background-color: #83d78c;
-      padding: 5px 15px; }
+      padding: 2px 15px; }
     .card__actions-item--buy {
       background-image: url("../images/icons/basket.svg");
       background-repeat: no-repeat;
@@ -6363,6 +6368,9 @@ a {
     .footer__list {
       width: 58.66667%;
       padding-left: 0%; } }
+  @media only screen and (max-width: 516px) {
+    .footer__list {
+      padding-left: 25%; } }
   .footer__list-links {
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -6381,10 +6389,16 @@ a {
         text-transform: uppercase;
         font-size: 0.75rem;
         padding-right: 7.5rem; } }
+    @media only screen and (max-width: 516px) {
+      .footer__list-links {
+        display: block;
+        padding-top: 1.25rem; } }
   .footer__list-links li {
     padding-bottom: 0.875rem; }
   .footer__list-links a {
     color: #666666; }
+    .footer__list-links a:hover {
+      color: #fff; }
   .footer__icon-wrapper {
     border: 1px solid #666666;
     width: 48px;
@@ -6392,6 +6406,13 @@ a {
     padding-left: 0.5rem;
     padding-top: 0.625rem;
     margin-right: 0.625rem; }
+    @media only screen and (max-width: 516px) {
+      .footer__icon-wrapper {
+        display: block;
+        margin-bottom: 0.625rem;
+        margin-left: 30%; } }
+    .footer__icon-wrapper:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
   .footer__icon-wrapper:nth-last-child(2) {
     margin-right: 0px; }
   .footer__icon {
@@ -6414,6 +6435,9 @@ a {
       background-position-y: -7px;
       width: 20px;
       height: 15px; }
+      @media only screen and (max-width: 516px) {
+        .footer__icon--mail {
+          display: none; } }
   .footer__mail, .footer__copyright, .footer__mail-input {
     font-family: "Roboto", sans-serif;
     font-weight: 300; }
@@ -6429,6 +6453,9 @@ a {
       padding-left: 0.625rem;
       padding-bottom: 1rem;
       width: 92%; }
+      @media only screen and (max-width: 516px) {
+        .footer__mail-input {
+          width: 100%; } }
   .footer__copyright {
     font-size: 0.75rem;
     text-align: center;
@@ -6445,5 +6472,9 @@ a {
         float: none;
         margin-left: 15%;
         padding-top: 1.5625rem; } }
+    @media only screen and (max-width: 516px) {
+      .footer__column-social {
+        margin: 0px 0px 0px 0px;
+        width: initial; } }
 
 /*FORM COMPONENTES*/
