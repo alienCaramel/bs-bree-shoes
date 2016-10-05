@@ -56,6 +56,13 @@
         padding: 0 15px;
     }
 
+     &__info--big {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+
     &__actions {
         display: block;
         padding: 0 30px;
@@ -103,7 +110,7 @@
            text-transform: uppercase;
            color: $white;
            background-color: $lochmara;
-           padding: 5px 15px;
+           padding: 2px 15px;
         }
 
         &-item--new {
@@ -113,7 +120,7 @@
            text-transform: uppercase;
            color: $white;
            background-color: $feijoa;
-           padding: 5px 15px;
+           padding: 2px 15px;
         }
 
         &-item--buy {
