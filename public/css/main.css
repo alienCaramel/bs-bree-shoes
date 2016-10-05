@@ -6186,6 +6186,14 @@ select {
   -webkit-transition: none;
   background-color: #f2f9fd; }
 
+.nav {
+  font-family: "Oswald", sans-serif;
+  font-size: 11px;
+  line-height: 1.42857;
+  color: #666666;
+  background-color: transparent;
+  text-transform: uppercase; }
+
 .navbar-default .navbar-brand {
   background-color: #fff; }
 
