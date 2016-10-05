@@ -1,3 +1,43 @@
+.menu-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:$whiteIce;
+}
+
+.behavior-menu {
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: $woodsmoke;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      padding-top: 3em;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-family: $oswald-family;
+      margin-left: 0.3em;
+    }
+
+  li a:hover:not(.active) {
+    background-color: $whiteIce;
+  }
+}
+
+.hover-color a:hover {
+  border-bottom: 3px solid $lochmara; /* or whatever colour you'd prefer */
+
+}
+
+.icons-header{
+  margin-right:10px;
+}
+
 .navbar-brand {
   float: left;
   line-height: 0px;
@@ -7,90 +47,10 @@
   margin-top: 14px;
 }
 
-.form-control{
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 211px;
-  line-height: 1.42857;
-  color: $lochmara;
-  border: none;
-  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.075);
-  box-shadow: inset 0 0px 0px rgba(0,0,0,0.75);
-  -webkit-transition: none;
-  background-color: $whiteIce;
-}
-
-
-body {
-  font-family:$oswald-family;
-  font-size: 11px;
-  line-height: 1.42857;
-  color:$doveGray;
-  background-color: transparent;
-  text-transform: uppercase;
-}
-
-.navbar-default .navbar-brand{
-  background-color:$white;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-  border-color: $white;
-}
-
-.navbar-default{
-  background-color:$whiteIce;
-  background-color: $whiteIce;
-  border-color:$whiteIce;
-}
-
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-  border-color: $whiteIce;
-}
-
-.navbar-default{
-  background-color:$whiteIce;
-  background-color: $whiteIce;
-  border-color:$whiteIce;
-}
-
-.navbar-form{
-  background-color: $whiteIce;
-
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color:$lochmara;
-  background-color: transparent;
-}
-
-.navbar-default .navbar-nav > .active > a {
-  background-color: transparent;
-  box-shadow: inset 0 -4px 0 $lochmara;
-
-}
-
-.navbar-default .navbar-nav > li > a {
-  background-color: transparent;
-
-}
-
-
-a{
-  text-decoration: none;
-  padding-right: 2em;
-}
-
-.nav > li > a {
-  position: relative;
-  display: block;
-  padding: 1em 2em;
-}
 
 .brand-title{
-  padding-left: 8em;
+  padding-top: 3.75em;
+  padding-left: 5em;
 }
 
 .subtitle{
@@ -98,71 +58,17 @@ a{
   color:$lochmara;
   font-size: 12px;
   font-family:$oswald-family;
-  padding-left: 13em;
+  padding-left: 12.3em;
 }
 
+.dropdown-space{
+  padding-bottom: 0.3em;
+}
 
 .icon-arrow{
   display: inline-block;
+  padding-top: 0.5em;
   margin-top: 0.5em;
-}
-.btn-custom{
-  color: rgb(16,108,200);
-  max-width: 100%;
-  box-sizing: border-box;
-  cursor: pointer;
-  min-height: 36px;
-  min-width: 88px;
-  vertical-align: middle;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-grid-row-align: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 3px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 0;
-  padding: 0 6px;
-  margin: 6px 8px;
-  background: transparent;
-  color: currentColor;
-  white-space: nowrap;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-style: inherit;
-  font-variant: inherit;
-  font-family: inherit;
-  text-decoration: none;
-  overflow: hidden;
-  -webkit-transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
-  transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
-
-}
-
-.form-space{
-  padding-left: 3em;
-}
-.border-menu{
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  background-color: $white;
-  height: 3em;
-  font-size: 13px;
-  text-align: center;
-  border: 0.3px solid $ebb;
-}
-
-.log-search{
-  li{
-    padding-right: 2em;
-    padding-left: 2em;
-    padding-bottom: 0.6em;
-    padding-top: 1em;
-  }
 }
 
 .material-icons {
@@ -181,18 +87,106 @@ a{
   -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 400px){
+.btn-custom{
+  max-width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  min-height: 36px;
+  min-width: 88px;
+  padding: 0 6px;
+  margin: 6px 8px;
+  background: transparent;
+  color: currentColor;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 11px;
+  font-style: inherit;
+  font-variant: inherit;
+  font-family: $oswald-family;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+  transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.resposive-menu{
+  display: none;
+}
+
+@media (max-width: 800px){
   .brand-title{
-    padding-left:7em;
+    padding-left: 16em;
+  }
+  .subtitle{
+    padding-left: 27em;
+  }
+
+  .behavior-menu {
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: $woodsmoke;
+      text-align: center;
+      padding: 7px 8px;
+      text-decoration: none;
+      padding-top: 3em;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-family: $oswald-family;
+      margin-left: 0.1em;
+    }
+
+    li a:hover:not(.active) {
+      background-color: $whiteIce;
+    }
 
   }
 
-}
+  .hover-color a:hover {
+    border-bottom: 3px solid $lochmara; /* or whatever colour you'd prefer */
 
-@media (min-width: 600px) {
-  .menu-responsive{
-    display: none;
   }
 }
 
+@media (min-width: 900px){
+  .brand-title{
+    padding-left: 16em;
+  }
+  .subtitle{
+    padding-left: 28em;
+  }
 
+  .behavior-menu {
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: $woodsmoke;
+      text-align: center;
+      padding: 7px 8px;
+      text-decoration: none;
+      padding-top: 3em;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-family: $oswald-family;
+      margin-left: 0.1em;
+    }
+
+    li a:hover:not(.active) {
+      background-color: $whiteIce;
+    }
+
+  }
+
+  .hover-color a:hover {
+    border-bottom: 3px solid $lochmara; /* or whatever colour you'd prefer */
+
+  }
+}
