@@ -5887,16 +5887,23 @@ select {
   .card__content {
     background-color: #fff;
     min-height: 430px;
-    padding: 33px 10px 0 10px;
+    padding-top: 33px;
     box-sizing: border-box;
     position: relative; }
   .card img {
     margin-bottom: 25px; }
+    @media only screen and (min-width: 768px) {
+      .card img {
+        width: auto; } }
+    @media only screen and (min-width: 960px) {
+      .card img {
+        width: 100%; } }
   .card__info {
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom: 40px; }
+    bottom: 40px;
+    padding: 0 15px; }
   .card__actions {
     display: block;
     padding: 0 30px;
