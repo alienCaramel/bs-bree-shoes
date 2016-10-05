@@ -5,11 +5,47 @@
     &__content {
         background-color: $white;
         min-height: 430px;
-        padding: 33px 10px 0 10px;
+        padding-top: 33px;
         box-sizing: border-box;
         position: relative;
-    } img {
+
+       
+        // @include bp-smaller {
+        //     border: 1px solid red;
+        // }
+
+        // @include bp-small {
+        //     border: 1px solid black;
+        // }
+
+        // @include bp-medium {
+        //      border: 1px solid green;
+        // }
+
+        // @include bp-large {
+        //      border: 1px solid blue;
+        // }
+    } 
+    
+    img {
         margin-bottom: 25px;
+        // width: 100%;
+
+        // @include extra-small {
+        //      width: auto;
+        // }
+
+        // @include bp-smaller {
+        //     width: 100%;
+        // }
+
+        @include bp-medium {
+             width: auto;
+        }
+
+        @include bp-large {
+             width: 100%;
+        }
     }
 
     &__info {
@@ -17,6 +53,7 @@
         text-align: center;
         width: 100%;
         bottom: 40px;
+        padding: 0 15px;
     }
 
     &__actions {
