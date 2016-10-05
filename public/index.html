@@ -21,22 +21,17 @@
                     </a> 
                 </div> <!-- Collect the nav links, forms, and other content for toggling --> 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                    <ul class="nav navbar-nav"> 
+                    <ul class="nav navbar-nav navbar-left form-space" > 
                         <li class="active"><a href="#">Footwear <span class="sr-only">(current)</span></a></li> 
                         <li><a href="#">Clothing</a></li> 
                         <li><a href="#">Accessories</a></li> 
                         <li><a href="#">Brands</a></li> 
                         <li><a href="#">Clearance</a></li> 
-                    </ul> 
-                    <form class="navbar-form navbar-left"> 
-                        <div class="form-group"> 
-                            <input type="text" class="form-control" placeholder=""> 
-                        </div> 
-                    </form> 
-                    <ul class="nav navbar-nav navbar-right"> 
-                        <li><a href="#" class="">Search</a></li> 
-                        <li><a href="#">Cart (2)</a></li> 
-                        <li><a href="#">Sign in</a></li> 
+                    </ul>  
+                    <ul class="nav navbar-nav navbar-right log-search"> 
+                        <li><i class="material-icons md-18">search</i>Search</a></li> 
+                        <li><i class="material-icons md-18">shopping_basket</i>Cart(2)</a></li> 
+                        <li><i class="material-icons md-18">person</i>Sing in</a></li> 
                     </ul> 
                 </div><!-- /.navbar-collapse --> 
             </nav>
@@ -44,22 +39,22 @@
             <div class="menu-responsive">
                 <div class="row">
                    <div class="col-md-12 border-menu">
-                        <p style="text-align: center">Clothing</p>
+                       <span class="menu-spac-pad" ><a  href="" tyle="text-align: center">Clothing</a></span>
                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 border-menu">
-                        <p style="text-align: center;margin-top: 1em" class="p-margin">Accessories</p>
-                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 border-menu">
-                        <p style="text-align: center;margin-top: 1em">Brands</p>
+                        <a href="" tyle="text-align: center">Accesories</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 border-menu">
-                        <p style="text-align: center;margin-top: 1em">Clearance</p>
+                        <a href="" tyle="text-align: center">Brands</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 border-menu" style="margin-bottom: 3em">
+                        <a href="" tyle="text-align: center">Clearance</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +99,7 @@
                                 </ul>
                                 <div class="card__info">
                                     <picture >
-                                        <img src="./images/shoe-02.png" class="" alt="">
+                                        <img src="./images/shoe-02.png" class="" alt="" style="width:70%;">
                                     </picture>
                                     <h3 class="card__title">Raf Simons x adidas</h3>
                                     <p class="card__description">Mid - Platform Light-Up</p>
@@ -307,10 +302,10 @@
             </div>
              <div class="container-fluid">
             <footer class="row footer">
-                <div class="col-sm-9 col-md-9 col-lg-9">
+                <div class="footer__list col-sm-8 col-md-8 col-lg-8">
                     <div class ="footer__brand-logo"></div>
 
-                    <ul class="footer__list footer__list-shop">
+                    <ul class="footer__list-links">
                         <li><a href="">Footwear</a></li>
                         <li><a href="">Clothing</a></li>
                         <li><a href="">Accesories</a></li>
@@ -318,7 +313,7 @@
                         <li><a href="">Clearance</a></li>
                     </ul> <!-- End list-shop -->
 
-                    <ul class="footer__list footer__list-contact">
+                    <ul class="footer__list-links">
                         <li><a href="">About</a></li>
                         <li><a href="">Contact us</a></li>
                         <li><a href="">Support</a></li>
@@ -326,14 +321,14 @@
                         <li><a href="">Press room</a></li>
                     </ul> <!-- End list-contact -->
 
-                    <ul class="footer__list footer__list-links">
+                    <ul class="footer__list-links">
                         <li><a href="">Website terms</a></li>
                         <li><a href="">Select country</a></li>
                         <li><a href="">Source code</a></li>
                     </ul> <!-- End list-links -->
                 </div>
 
-                <div class="footer__column-social col-sm-3 col-md-3 col-lg-3">
+                <div class="footer__column-social col-sm-4 col-md-4 col-lg-4">
                     <div class="footer__icon-wrapper">
                         <i class="footer__icon footer__icon--youtube"></i>
                     </div>
@@ -348,16 +343,20 @@
                     </div>
                     <div class="footer__icon-wrapper">
                         <i class="footer__icon footer__icon--pinterest"></i>
-                    </div> <!--End Icons-->
-
-                    <div class="footer__mail">
-                        <p class="footer__mail-text"><i class="footer__icon footer__icon--mail"></i> Suscribe our newsletter...</p>
+                    </div> 
+                    <!--End Icons-->
+                        
+                    <div class="footer__mail"> 
+                        <span class="footer__mail-text">
+                            <i class="footer__icon footer__icon--mail"></i> 
+                            <input class = "footer__mail-input" type="text" placeholder="Suscribe our newsletter...">
+                        </span>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <p class="footer__copyright">Copyright © 2015 Bree Orthonormai. All rights reserved.</p>
-                </div>
+                </div>  
             </footer>
              </div>
     </body>

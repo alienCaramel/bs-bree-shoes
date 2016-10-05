@@ -16,6 +16,16 @@
     padding-right: calculate-rem(61);
     padding-bottom: calculate-rem(33);
 
+    @include bp-small {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    @include bp-medium {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
     &__brand-logo,
     &__list-links, 
     &__icon-wrapper, 
@@ -34,14 +44,50 @@
         width: 50px;
         height: 50px;
         margin-right: calculate-rem(40);
+
+        @include bp-small {
+            margin-right: 5%;
+        }
     }
 
     &__list {
+        @include bp-medium {
+            width: 58.66667%;
+            padding-left: 0%;
+        }
+
+        @include bp-custom-500 {
+            padding-left: 25%;
+        }
 
         &-links {
             text-transform: uppercase;
             font-size: calculate-rem(12);
             padding-right: calculate-rem(120);
+
+            @include bp-small {
+                padding-right: 5%;
+            }
+
+            @include bp-medium {
+                padding-right: 0%;
+            }
+
+            @include bp-large {
+               padding-right: 5%;
+            }
+
+            @include bp-extra-large {
+                text-transform: uppercase;
+                font-size: calculate-rem(12);
+                padding-right: calculate-rem(120);
+            }
+
+            @include bp-custom-500 {
+                display: block;
+                padding-top: calculate-rem(20);
+            }  
+            
         }
 
         &-links li{
@@ -49,8 +95,13 @@
         }
 
         &-links a{
-            color: $doveGray;  
+            color: $doveGray;
+
+            &:hover {
+                color: $white;  
+            }  
         }
+
     }
 
     &__icon-wrapper {
@@ -60,6 +111,15 @@
         padding-left: calculate-rem(8);
         padding-top: calculate-rem(10);
         margin-right: calculate-rem(10);
+
+        @include bp-custom-500 {
+            display: block;
+            margin-bottom: calculate-rem(10);
+            margin-left: 30%;
+        }
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
     }
 
 
@@ -97,7 +157,11 @@
             background-position-x: -227px;
             background-position-y: -7px;
             width: 20px;
-            height: 15px;   
+            height: 15px;
+
+            @include bp-custom-500 {
+                display: none;
+            }   
         }
     }
 
@@ -112,7 +176,6 @@
         font-size: calculate-rem(14);
         vertical-align: middle;
 
-
         &-text {
             padding-top: calculate-rem(31);
         }
@@ -123,6 +186,11 @@
             padding-top: calculate-rem(31);
             padding-left: calculate-rem(10);
             padding-bottom: calculate-rem(16);
+            width: 92%;
+
+            @include bp-custom-500 {
+                width: 100%;
+            } 
         }
     }
 
@@ -130,6 +198,7 @@
         font-size: calculate-rem(12);
         text-align: center;
         padding-top: calculate-rem(62);
+        text-transform: none;
     }
 
     &__column-social {
@@ -138,6 +207,17 @@
         padding-right: 0;
         width: calculate-rem(292);
         float: right;
-    }
 
+        @include bp-small {
+            float: none;
+            margin-left: 15%;
+            padding-top: calculate-rem(25);
+        }
+
+        @include bp-custom-500 {
+            margin: 0px 0px 0px 0px;
+            width: initial;
+        }
+
+    }
 }

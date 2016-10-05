@@ -31,3 +31,9 @@
         @content;
     }
 }
+
+@mixin bp-custom-500 {
+    @media only screen and (max-width: $max-width-custom-500) {
+        @content;
+    }
+}
