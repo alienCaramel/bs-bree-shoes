@@ -56,6 +56,10 @@
             padding-left: 0%;
         }
 
+        @include bp-custom-500 {
+            padding-left: 25%;
+        }
+
         &-links {
             text-transform: uppercase;
             font-size: calculate-rem(12);
@@ -78,6 +82,11 @@
                 font-size: calculate-rem(12);
                 padding-right: calculate-rem(120);
             }
+
+            @include bp-custom-500 {
+                display: block;
+                padding-top: calculate-rem(20);
+            }  
             
         }
 
@@ -86,8 +95,13 @@
         }
 
         &-links a{
-            color: $doveGray;  
+            color: $doveGray;
+
+            &:hover {
+                color: $white;  
+            }  
         }
+
     }
 
     &__icon-wrapper {
@@ -97,6 +111,15 @@
         padding-left: calculate-rem(8);
         padding-top: calculate-rem(10);
         margin-right: calculate-rem(10);
+
+        @include bp-custom-500 {
+            display: block;
+            margin-bottom: calculate-rem(10);
+            margin-left: 30%;
+        }
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
     }
 
 
@@ -134,7 +157,11 @@
             background-position-x: -227px;
             background-position-y: -7px;
             width: 20px;
-            height: 15px;   
+            height: 15px;
+
+            @include bp-custom-500 {
+                display: none;
+            }   
         }
     }
 
@@ -149,7 +176,6 @@
         font-size: calculate-rem(14);
         vertical-align: middle;
 
-
         &-text {
             padding-top: calculate-rem(31);
         }
@@ -161,6 +187,10 @@
             padding-left: calculate-rem(10);
             padding-bottom: calculate-rem(16);
             width: 92%;
+
+            @include bp-custom-500 {
+                width: 100%;
+            } 
         }
     }
 
@@ -182,6 +212,11 @@
             float: none;
             margin-left: 15%;
             padding-top: calculate-rem(25);
+        }
+
+        @include bp-custom-500 {
+            margin: 0px 0px 0px 0px;
+            width: initial;
         }
 
     }
