@@ -6037,7 +6037,7 @@ select {
     min-height: 430px;
     position: relative; }
   .card-doble__info {
-    height: 50%;
+    height: 65%;
     overflow: hidden;
     margin: auto;
     position: absolute;
